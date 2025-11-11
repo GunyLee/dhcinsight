@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "typeRoots": [
+      "src/types",
+      "src/themes" // ✅ 여기에 themes 추가
+    ],
+    "incremental": true
+  },
+  "include": [
+    "src",
+    "src/scripts",
+    "middleware.ts",
+    "src/themes/palette.d.ts" // ✅ 명시적으로 포함
+  ],
+  "exclude": ["node_modules"]
+}
